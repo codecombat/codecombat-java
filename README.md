@@ -1,19 +1,15 @@
-# {Company} Java Library
+# CodeCombat Java Library
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.fern-api/{company})](https://central.sonatype.dev/artifact/io.github.fern-api/{company}/0.0.7/versions) 
 ![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/io.github.fern-api/{company}?server=https%3A%2F%2Fs01.oss.sonatype.org)
 
 ## Documentation
 
-API documentation is available at <{docs_url}>.
+API documentation is available at https://codecombat.mintlify.app/introduction.
 
 ## Usage
 
-Check out the [sample app](.sample-app/app.java) which consumes this SDK!
-
 ```java
-// start with env variables
-TODO
 ```
 
 ## Beta status
