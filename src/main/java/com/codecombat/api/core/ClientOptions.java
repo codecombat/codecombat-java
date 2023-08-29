@@ -26,7 +26,7 @@ public final class ClientOptions {
                 "X-Fern-SDK-Name",
                 "com.codecombat.fern:api-sdk",
                 "X-Fern-SDK-Version",
-                "0.1.7",
+                "0.1.8",
                 "X-Fern-Language",
                 "JAVA"));
         this.headerSuppliers = headerSuppliers;
