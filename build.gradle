@@ -12,17 +12,17 @@ repositories {
 }
 
 dependencies {
-    api 'io.github.fern-api:jersey-utils:0.0.82'
+    api 'com.squareup.okhttp3:okhttp:4.9.3'
     api 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
     api 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.3'
-    api 'io.github.openfeign:feign-jackson:11.8'
-    api 'io.github.openfeign:feign-core:11.8'
-    api 'io.github.openfeign:feign-jaxrs2:11.8'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
 spotless {
     java {
-        googleJavaFormat()
+        palantirJavaFormat()
     }
 }
 
@@ -31,12 +31,16 @@ java {
     withJavadocJar()
 }
 
+test {
+    useJUnitPlatform()
+}
+
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'io.github.fern-api'
-            artifactId = 'codecombat'
-            version = '0.0.9'
+            groupId = 'com.codecombat'
+            artifactId = 'codecombat-java'
+            version = '0.1.6'
             from components.java
         }
     }
